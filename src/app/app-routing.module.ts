@@ -1,7 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TimeManagementComponent } from './time-management/time-management.component';
+import { AbsenceManagementComponent } from './absence-management/absence-management.component';
+import { UserComponent } from './user/user.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'',
+    children: [
+      {
+        path:'',
+        component: DashboardComponent,
+      },
+      {
+        path:'zeiterfassung',
+        component: TimeManagementComponent,
+      },
+      {
+        path:'abwesenheit',
+        component: AbsenceManagementComponent,
+      },
+      {
+        path:'benutzer',
+        component: UserComponent,
+      },
+      {
+        path:'**',
+        redirectTo: ''
+      },
+    ],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
