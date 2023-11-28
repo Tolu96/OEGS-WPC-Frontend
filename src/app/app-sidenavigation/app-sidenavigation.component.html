@@ -13,7 +13,7 @@
     
       <mat-divider></mat-divider>
 
-      <a mat-button><mat-icon>settings</mat-icon>Einstellungen</a> 
+      <a mat-button routerLink="/einstellungen"><mat-icon>settings</mat-icon>Einstellungen</a> 
     </mat-nav-list>
   </mat-sidenav>
 
@@ -27,10 +27,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>OEGS Work-Plan-Kalender</span>
+      <span>OEGS WPC</span>
       <span class="spacer"></span>
       <a mat-button routerLink="/benutzer"><mat-icon>person</mat-icon>Benutzer</a>
-      <a mat-button><mat-icon>help</mat-icon>Hilfe</a>
+      <a mat-button (click)="Opendialog()"><mat-icon>help</mat-icon>Hilfe</a>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
