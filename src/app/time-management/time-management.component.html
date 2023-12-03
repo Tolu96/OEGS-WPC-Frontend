@@ -1,1 +1,14 @@
-<p>time-management works!</p>
+<mat-sidenav-container class="sidenav-container">
+    
+    <mat-sidenav opened mode="side" position="end"><h1>Zeitarbeitserfassung</h1>
+        <app-timeform></app-timeform>
+    </mat-sidenav>
+        <mat-sidenav-content>
+            <p></p>
+            <button style="margin-left: 1.5%;" (click)="Opendialog()" mat-raised-button color="primary"><mat-icon>alarm</mat-icon>(+) Zeitarbeitserfassung</button>
+            <p></p>
+            <mat-card class="oegs-calendar-card">
+               <mat-calendar [(selected)]="selected"></mat-calendar>
+            </mat-card>            
+        </mat-sidenav-content>
+  </mat-sidenav-container>

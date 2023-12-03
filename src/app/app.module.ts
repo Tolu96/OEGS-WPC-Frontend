@@ -17,6 +17,21 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { TimeformComponent } from './timeform/timeform.component';
+import { AbsenceformComponent } from './absenceform/absenceform.component';
+import { TimePopupComponent } from './time-popup/time-popup.component';
+import { HelpPopupComponent } from './help-popup/help-popup.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +40,12 @@ import { MatMenuModule } from '@angular/material/menu';
     TimeManagementComponent,
     AbsenceManagementComponent,
     UserComponent,
-    DashboardComponent
+    DashboardComponent,
+    TimeformComponent,
+    AbsenceformComponent,
+    TimePopupComponent,
+    HelpPopupComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,9 +58,19 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule, 
+    MatNativeDateModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatButtonModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'de' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

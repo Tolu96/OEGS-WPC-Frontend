@@ -1,0 +1,44 @@
+<form [formGroup]="usertimeform" (ngSubmit)="submit()">
+    <mat-card>
+        <mat-card-content>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Tag</mat-label>
+                <input formControlName="date" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker touchUi="true" #picker></mat-datepicker>
+            </mat-form-field>
+    
+            <mat-divider></mat-divider>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Startzeit</mat-label>
+                <input formControlName="starttime" matInput>
+            </mat-form-field>
+            
+            <mat-form-field class="mat-50">
+                <mat-label>Endzeit</mat-label>
+                <input formControlName="endtime" matInput>
+            </mat-form-field>
+    
+            <mat-divider></mat-divider>
+            
+            <mat-form-field class="mat-100">
+                <mat-label>Baustellen</mat-label>
+                <textarea formControlName="workside" matInput></textarea>
+            </mat-form-field>
+            
+            <mat-form-field class="mat-100">
+                <mat-label>Beschreibung</mat-label>
+                <textarea formControlName="description" matInput></textarea>
+            </mat-form-field>
+    
+        </mat-card-content>
+        <mat-card-footer>
+        <div class="button">
+            <button mat-raised-button type="submit" color="primary">Abschicken</button>
+            <button mat-raised-button (click)="clear()" color="primary">Löschen</button>
+        </div>
+        </mat-card-footer>
+    </mat-card>
+</form>
