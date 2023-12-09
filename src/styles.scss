@@ -3,6 +3,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.hide-on-small{
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+
 mat-card{
     margin: 2%;
     text-align: left;
