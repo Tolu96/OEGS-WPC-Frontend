@@ -6,14 +6,14 @@
     
     <mat-toolbar color="primary">Menu</mat-toolbar>
     
-    <mat-nav-list>
-      <a mat-button routerLink="/"><mat-icon>dashboard</mat-icon><span>Dashboard</span></a>
-      <a mat-button routerLink="/zeiterfassung"><mat-icon>alarm</mat-icon>Zeiterfassung</a>
-      <a mat-button routerLink="/abwesenheit"><mat-icon>calendar_today</mat-icon>Abwesenheit</a>
+    <mat-nav-list class="nav-list">
+      <a mat-button routerLink="/" class="nav-list-a"><mat-icon ><span class="material-icons md-36">dashboard</span></mat-icon><span>Dashboard</span></a>
+      <a mat-button routerLink="/zeiterfassung" class="nav-list-a"><mat-icon>alarm</mat-icon>Zeiterfassung</a>
+      <a mat-button routerLink="/abwesenheit" class="nav-list-a"><mat-icon>calendar_today</mat-icon>Abwesenheit</a>
     
       <mat-divider></mat-divider>
 
-      <a mat-button routerLink="/einstellungen"><mat-icon>settings</mat-icon>Einstellungen</a> 
+      <a mat-button routerLink="/einstellungen" class="nav-list-a"><mat-icon>settings</mat-icon>Einstellungen</a> 
     </mat-nav-list>
   </mat-sidenav>
 

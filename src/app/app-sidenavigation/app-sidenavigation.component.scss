@@ -3,7 +3,8 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: fit-content; 
+  max-width: 400px;
 }
 
 .mat-toolbar.mat-primary {
@@ -14,8 +15,28 @@
 
 mat-icon {
   margin-right: 08px;
+  
+}
+.icon{
+  font-size: 36px;
+}
+.material-icons.md-36 { 
+  font-size: 36px; 
 }
 
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.nav-list-a{
+  font-size: 1.7rem;
+  @media screen {
+    font-size: 15px;
+  }
+}
 .spacer{
   flex: 1 1 auto;
 }
+
