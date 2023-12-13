@@ -29,7 +29,8 @@
       </button>
       <span>OEGS WPC</span>
       <span class="spacer"></span>
-      <a mat-button (click)="Opendialog()"><mat-icon>help</mat-icon>Hilfe</a>
+      <a mat-button routerLink="/benutzer"><mat-icon>person</mat-icon><span class="hide-on-small">Benutzer</span></a>
+      <a mat-button (click)="Opendialog()"><mat-icon>help</mat-icon><span class="hide-on-small">Hilfe</span></a>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
