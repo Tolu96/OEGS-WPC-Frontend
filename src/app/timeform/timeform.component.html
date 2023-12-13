@@ -1,6 +1,6 @@
 <form [formGroup]="usertimeform" (ngSubmit)="submit()">
-    <mat-card>
-        <mat-card-content>
+    <mat-card class="card_div">
+        <mat-card-content  >
     
             <mat-form-field class="mat-50">
                 <mat-label>Tag</mat-label>
@@ -11,7 +11,7 @@
     
             <mat-divider></mat-divider>
     
-            <mat-form-field class="mat-50">
+            <mat-form-field class="mat-50" >
                 <mat-label>Startzeit</mat-label>
                 <input formControlName="starttime" matInput>
             </mat-form-field>

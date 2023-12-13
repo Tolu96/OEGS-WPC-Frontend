@@ -22,3 +22,7 @@ mat-icon {
 .spacer{
   flex: 1 1 auto;
 }
+
+.activesidebarbutton{
+  --mdc-text-button-label-text-color: blue;
+}
