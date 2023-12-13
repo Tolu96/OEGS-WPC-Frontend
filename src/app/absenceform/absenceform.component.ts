@@ -21,7 +21,7 @@ export class AbsenceformComponent {
   });
 
   submit(){
-    console.log(this.userabsenceform.value)
+    
   }
   
   clear(){

@@ -20,7 +20,7 @@ export class TimeformComponent {
   })
 
   submit(){
-    console.log(this.usertimeform.value)
+    
   }
   clear(){
     this.usertimeform.reset();
