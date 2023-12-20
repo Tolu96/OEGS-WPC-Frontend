@@ -32,6 +32,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SettingsComponent } from './settings/settings.component';
+import { BreaktimeManagementComponent } from './breaktime-management/breaktime-management.component';
+import { BreaktimeformComponent } from './breaktimeform/breaktimeform.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { SettingsComponent } from './settings/settings.component';
     AbsenceformComponent,
     TimePopupComponent,
     HelpPopupComponent,
-    SettingsComponent
+    SettingsComponent,
+    BreaktimeManagementComponent,
+    BreaktimeformComponent
   ],
   imports: [
     BrowserModule,
