@@ -39,6 +39,7 @@ import { AbsencetableComponent } from './absencetable/absencetable.component';
 import { MatTableModule } from '@angular/material/table';
 import { TimetablePopupComponent } from './timetable-popup/timetable-popup.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { AbsencetablePopupComponent } from './absencetable-popup/absencetable-popup.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     BreaktimeformComponent,
     TimetableComponent,
     AbsencetableComponent,
-    TimetablePopupComponent
+    TimetablePopupComponent,
+    AbsencetablePopupComponent
   ],
   imports: [
     BrowserModule,
