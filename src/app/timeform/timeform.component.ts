@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { TimetableComponent } from '../timetable/timetable.component';
 
 @Component({
   selector: 'app-timeform',
@@ -8,7 +10,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class TimeformComponent {
  
-  constructor(private builder:FormBuilder){
+  constructor(private builder:FormBuilder, private dialog:MatDialog){
 
   }
   usertimeform=this.builder.group({
@@ -19,10 +21,17 @@ export class TimeformComponent {
     description:this.builder.control('')
   })
 
-  submit(){
-    
+  submit(){  
   }
+
   clear(){
     this.usertimeform.reset();
+  }
+
+  Opentable(){
+    this.dialog.open(TimetableComponent,{
+      width: '60%',
+      height: '800px'
+    })
   }
 }

@@ -34,6 +34,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { SettingsComponent } from './settings/settings.component';
 import { BreaktimeManagementComponent } from './breaktime-management/breaktime-management.component';
 import { BreaktimeformComponent } from './breaktimeform/breaktimeform.component';
+import { TimetableComponent } from './timetable/timetable.component';
+import { AbsencetableComponent } from './absencetable/absencetable.component';
+import { MatTableModule } from '@angular/material/table';
+import { TimetablePopupComponent } from './timetable-popup/timetable-popup.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,10 @@ import { BreaktimeformComponent } from './breaktimeform/breaktimeform.component'
     HelpPopupComponent,
     SettingsComponent,
     BreaktimeManagementComponent,
-    BreaktimeformComponent
+    BreaktimeformComponent,
+    TimetableComponent,
+    AbsencetableComponent,
+    TimetablePopupComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +80,9 @@ import { BreaktimeformComponent } from './breaktimeform/breaktimeform.component'
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'de' }],
   bootstrap: [AppComponent]
