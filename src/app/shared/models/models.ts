@@ -34,11 +34,11 @@ export enum StatusEnum {
 }
 
 export class BreakTime{
-    public break_time_id: number;
+    public break_time_id: string;
     public break_start: Date;
     public break_end: Date;
     public status: StatusEnum;
-    public employee_id: number;
+    public employee_id: string;
 
     constructor(breakTime: BreakTime){
       this.break_time_id = breakTime.break_time_id;
@@ -50,8 +50,8 @@ export class BreakTime{
 }
 
 export class Absence{
-    public absence_id: number;
-    public employee_id: number;
+    public absence_id: string;
+    public employee_id: string;
     public absence_status: StatusEnum;
     public absence_start: Date;
     public absence_end: Date;
@@ -70,7 +70,7 @@ export class Absence{
 }
 
 export class Employee{
-    public employee_id: number;
+    public employee_id: string;
     public first_name: string;
     public last_name: string;
     public adress: string;
@@ -100,11 +100,11 @@ export class Employee{
 }
 
 export class WorkingHours{
-    public working_hours_id: number;
+    public working_hours_id: string;
     public work_hour_start: Date;
     public work_hour_end: Date;
-    public employee_id: number;
-    public client_id: number;
+    public employee_id: string;
+    public client_id: string;
     public status: StatusEnum;
     public created_at: Date;
     public modified_at: Date;
@@ -122,7 +122,7 @@ export class WorkingHours{
 }
 
 export class Client{
-    public clientid: number;
+    public clientid: string;
     public clientName: string;
     public adress: string;
     public postCode: number;
