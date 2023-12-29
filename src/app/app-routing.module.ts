@@ -5,6 +5,7 @@ import { TimeManagementComponent } from './time-management/time-management.compo
 import { AbsenceManagementComponent } from './absence-management/absence-management.component';
 import { UserComponent } from './user/user.component';
 import { SettingsComponent } from './settings/settings.component';
+import { BreaktimeManagementComponent } from './breaktime-management/breaktime-management.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path:'abwesenheit',
         component: AbsenceManagementComponent,
+      },
+      {
+        path:'pause',
+        component: BreaktimeManagementComponent,
       },
       {
         path:'benutzer',
