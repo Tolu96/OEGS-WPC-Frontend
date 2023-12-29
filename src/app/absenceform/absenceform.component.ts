@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { AbsencetableComponent } from '../absencetable/absencetable.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-absenceform',
@@ -8,7 +10,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AbsenceformComponent {
 
-  constructor(private builder:FormBuilder){ 
+  constructor(private builder:FormBuilder, private dialog:MatDialog){ 
   }
   userabsenceform=this.builder.group({
     date:this.builder.control('',Validators.required),
@@ -26,5 +28,12 @@ export class AbsenceformComponent {
   
   clear(){
     this.userabsenceform.reset();
+  }
+
+  Opentable(){
+    this.dialog.open(AbsencetableComponent,{
+      width: '60%',
+      height: '800px'
+    })
   }
 }

@@ -1,1 +1,37 @@
-<p>absencetable works!</p>
+<h1>Meine Abwesenheit</h1>
+
+<br><br>
+
+<div class="tables-group">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+ 
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> Pos. </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef> Datum </th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="absence">
+            <th mat-header-cell *matHeaderCellDef> Grund für Abwesenheit </th>
+            <td mat-cell *matCellDef="let element"> {{element.absence}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="starttime">
+            <th mat-header-cell *matHeaderCellDef> Abwesenheit von </th>
+            <td mat-cell *matCellDef="let element"> {{element.starttime}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="endtime">
+            <th mat-header-cell *matHeaderCellDef> Abwesenheit bis </th>
+            <td mat-cell *matCellDef="let element"> {{element.endtime}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page"></mat-paginator>
+</div>
