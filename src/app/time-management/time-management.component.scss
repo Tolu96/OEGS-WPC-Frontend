@@ -6,9 +6,15 @@ button{
     margin: 2% 2% 0 2%;
     
 }
+.sidenav-form{
+    width: 30%;
+    max-width: 600px;
+}
 .sidenav-content{
+    height: calc(100vh - 65px);
+    max-width:calc(100vh - 10%);
+    
     @media(max-width:768px) {
-        height: 90vh;
         display: flex;  
     }
     
