@@ -1,11 +1,11 @@
-import {Absence, Client, URISTRING} from "../models";
+import {Absence, URISTRING} from "../models";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 
-export class ClientService{
+export class AbsenceService{
     httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
       };

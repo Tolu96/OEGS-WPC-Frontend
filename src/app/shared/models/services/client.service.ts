@@ -16,7 +16,7 @@ export class ClientService{
         return this.httpClient.get<Client>(URISTRING.URI.concat(URISTRING.CLIENT));
       }
 
-      getClientbyId(clientid: number): Observable<Client>{
+      getClientbyId(clientid: string): Observable<Client>{
         const url = `${URISTRING.URI.concat(URISTRING.CLIENT)}/${clientid}`;
         return this.httpClient.get<Client>(url);
       }
@@ -30,7 +30,7 @@ export class ClientService{
         return this.httpClient.put<Client>(updateUrl, updatedClient);
       }
 
-      deleteClient(clientid: number): Observable<Client>{
+      deleteClient(clientid: string): Observable<Client>{
         const deleteUrl = `${URISTRING.URI.concat(URISTRING.CLIENT)}/${clientid}`;
         return this.httpClient.delete<Client>(deleteUrl);
       }
