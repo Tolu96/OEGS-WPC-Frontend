@@ -4,7 +4,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar color="primary" class="nav-topbar-button">Menu</mat-toolbar>
     
     <mat-nav-list>
       <a mat-button routerLink="/" routerLinkActive="activesidebarbutton" [routerLinkActiveOptions]="{exact : true}"><mat-icon>dashboard</mat-icon>Dashboard</a>
@@ -18,8 +18,8 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
+    <mat-toolbar color="primary" class="nav-topbar">
+      <button class="nav-topbar-button"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
