@@ -1,11 +1,12 @@
 <mat-sidenav-container class="sidenav-container">
 
-    <mat-sidenav opened mode="side" position="end"><h1>Abwesenheit</h1>
+    <mat-sidenav class ="sidenav-form" opened mode="side" position="end">
+      <h1>Abwesenheit</h1>
       <app-absenceform></app-absenceform>        
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content class="sidenav-content">
         <mat-card class="oegs-calendar-card">
-            <mat-calendar [(selected)]="selected"></mat-calendar>
+            <mat-calendar  [(selected)]="selected"></mat-calendar>
           </mat-card>
       </mat-sidenav-content>
   </mat-sidenav-container>
