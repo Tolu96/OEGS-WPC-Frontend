@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 
-export class ClientService{
+export class AbsenceService{
     httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
       };
