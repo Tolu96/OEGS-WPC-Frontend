@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 
-export class ClientService{
+export class WorkingHoursService{
     httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
       };
