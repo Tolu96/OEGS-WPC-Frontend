@@ -1,0 +1,8 @@
+.tables-group {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+table {
+    width: 100%;
+}

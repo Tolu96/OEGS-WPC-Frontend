@@ -32,6 +32,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SettingsComponent } from './settings/settings.component';
+import { BreaktimeManagementComponent } from './breaktime-management/breaktime-management.component';
+import { BreaktimeformComponent } from './breaktimeform/breaktimeform.component';
+import { TimetableComponent } from './timetable/timetable.component';
+import { AbsencetableComponent } from './absencetable/absencetable.component';
+import { MatTableModule } from '@angular/material/table';
+import { TimetablePopupComponent } from './timetable-popup/timetable-popup.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { AbsencetablePopupComponent } from './absencetable-popup/absencetable-popup.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +53,13 @@ import { SettingsComponent } from './settings/settings.component';
     AbsenceformComponent,
     TimePopupComponent,
     HelpPopupComponent,
-    SettingsComponent
+    SettingsComponent,
+    BreaktimeManagementComponent,
+    BreaktimeformComponent,
+    TimetableComponent,
+    AbsencetableComponent,
+    TimetablePopupComponent,
+    AbsencetablePopupComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +82,9 @@ import { SettingsComponent } from './settings/settings.component';
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'de' }],
   bootstrap: [AppComponent]

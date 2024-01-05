@@ -1,4 +1,4 @@
-<form [formGroup]="usertimeform" (ngSubmit)="submit()">
+<form [formGroup]="userbreaktimeform" (ngSubmit)="submit()">
     <mat-card class="card_div">
         <mat-card-content  >
     
@@ -12,31 +12,20 @@
             <mat-divider></mat-divider>
     
             <mat-form-field class="mat-50" >
-                <mat-label>Startzeit</mat-label>
+                <mat-label>Pause von</mat-label>
                 <input formControlName="starttime" matInput>
             </mat-form-field>
             
             <mat-form-field class="mat-50">
-                <mat-label>Endzeit</mat-label>
+                <mat-label>Pause bis</mat-label>
                 <input formControlName="endtime" matInput>
             </mat-form-field>
     
             <mat-divider></mat-divider>
-            
-            <mat-form-field class="mat-100">
-                <mat-label>Baustellen</mat-label>
-                <textarea formControlName="workside" matInput></textarea>
-            </mat-form-field>
-            
-            <mat-form-field class="mat-100">
-                <mat-label>Beschreibung</mat-label>
-                <textarea formControlName="description" matInput></textarea>
-            </mat-form-field>
     
         </mat-card-content>
         <mat-card-footer>
         <div class="button">
-            <button  (click)="Opentable()" mat-raised-button color="primary">Meine Arbeitszeiten</button>
             <button mat-raised-button type="submit" color="primary">Abschicken</button>
             <button mat-raised-button (click)="clear()" color="primary">Löschen</button>
         </div>
