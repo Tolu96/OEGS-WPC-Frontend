@@ -22,26 +22,14 @@
   padding:0px ;
 }
 
+mat-icon {
+  margin-right: 08px;
+}
+
 .spacer{
   flex: 1 1 auto;
 }
 
 .activesidebarbutton{
   --mdc-text-button-label-text-color: blue;
-}
-.nav-list-h{
-  margin-left:10px;
-}
-.nav-list-button{
-  width:198px;
-  height: 50px;
-  font-size: 20px;
-  display: flex;
-  align-content: left;
-  justify-content: left;
-}
-
-.nav-list-button-icon{
-  transform: scale(1.5);
-  align-items: end;
 }
