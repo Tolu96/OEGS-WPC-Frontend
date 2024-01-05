@@ -4,16 +4,16 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     
-    <mat-toolbar color="primary" class="nav-topbar-button">Menu</mat-toolbar>
+    <mat-toolbar color="primary" class="nav-topbar-button"><span class="nav-list-h">Menu</span></mat-toolbar>
     
-    <mat-nav-list>
-      <a mat-button routerLink="/" routerLinkActive="activesidebarbutton" [routerLinkActiveOptions]="{exact : true}"><mat-icon>dashboard</mat-icon>Dashboard</a>
-      <a mat-button routerLink="/zeiterfassung" routerLinkActive="activesidebarbutton"><mat-icon>alarm</mat-icon>Zeiterfassung</a>
-      <a mat-button routerLink="/abwesenheit" routerLinkActive="activesidebarbutton"><mat-icon>calendar_today</mat-icon>Abwesenheit</a>
-      <a mat-button routerLink="/benutzer" routerLinkActive="activesidebarbutton"><mat-icon>person</mat-icon>Benutzer</a>
+    <mat-nav-list class="nav-list">
+      <a class="nav-list-button" mat-button routerLink="/" routerLinkActive="activesidebarbutton" [routerLinkActiveOptions]="{exact : true}"><mat-icon class="nav-list-button-icon">dashboard</mat-icon>Dashboard</a>
+      <a class="nav-list-button" mat-button routerLink="/zeiterfassung" routerLinkActive="activesidebarbutton"><mat-icon class="nav-list-button-icon">alarm</mat-icon>Zeiterfassung</a>
+      <a class="nav-list-button" mat-button routerLink="/abwesenheit" routerLinkActive="activesidebarbutton"><mat-icon class="nav-list-button-icon">calendar_today</mat-icon>Abwesenheit</a>
+      <a class="nav-list-button" mat-button routerLink="/benutzer" routerLinkActive="activesidebarbutton"><mat-icon class="nav-list-button-icon">person</mat-icon>Benutzer</a>
       <mat-divider></mat-divider>
 
-      <a mat-button routerLink="/einstellungen" routerLinkActive="activesidebarbutton"><mat-icon>settings</mat-icon>Einstellungen</a> 
+      <a class="nav-list-button" mat-button routerLink="/einstellungen" routerLinkActive="activesidebarbutton"><mat-icon>settings</mat-icon>Einstellungen</a> 
     </mat-nav-list>
   </mat-sidenav>
 
@@ -27,7 +27,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>OEGS WPC</span>
+      <span class="nav-list-h">OEGS WPC</span>
       <span class="spacer"></span>
       <a mat-button routerLink="/benutzer"><mat-icon>person</mat-icon><span class="hide-on-small">Benutzer</span></a>
       <a mat-button (click)="Opendialog()"><mat-icon>help</mat-icon><span class="hide-on-small">Hilfe</span></a>
