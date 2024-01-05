@@ -4,7 +4,6 @@ h1{
 
 button{
     margin: 2% 2% 0 2%;
-    height: 10px;
     
 }
 .sidenav-form{
@@ -13,7 +12,7 @@ button{
 }
 .sidenav-content{
     height: calc(100vh - 65px);
-    max-width:calc(100vh - 12% - 10px);
+    max-width:calc(100vh - 10%);
     
     @media(max-width:768px) {
         display: flex;  
