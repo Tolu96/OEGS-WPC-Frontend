@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 300px;
 }
 .nav-topbar{
   max-height: 65px;
@@ -32,4 +32,20 @@ mat-icon {
 
 .activesidebarbutton{
   --mdc-text-button-label-text-color: blue;
+}
+
+.nav-list-h{
+  margin-left: 10px;
+}
+
+.nav-list-button{
+  width:100%;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  justify-content: left;
+}
+
+.nav-list-button-icon{
+  transform: scale(1.5);
 }
